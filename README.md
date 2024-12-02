@@ -73,8 +73,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 #   <!-- Netflix GPT -->
 
-created create react app
-downloaded tailwind and add the code to tailwind.config.js  and index.css and  tested by running the app
+- Created create react app
+- Downloaded tailwind and add the code to tailwind.config.js  and index.css and  tested by running the app
 
 # Features
 - Login/Signup
