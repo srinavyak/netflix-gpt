@@ -75,6 +75,34 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 - Created create react app
 - Downloaded tailwind and add the code to tailwind.config.js  and index.css and  tested by running the app
+- header
+- Routing of app
+- login/signup form
+- form Validation
+- useRef()-hook
+- firebase setup
+- deployememnt of our app to prod
+- create signup user in firebase
+- implement signup user api
+- created redux store with user slice
+- implemented signout 
+<!-- - update profile -->
+- BugFix: signup user displayname update
+- BugFix: if the user is not loggedin redirect/browse to login page and vice versa
+- Unsubscribed to the on AuthStatechangd callback
+
+- Register for tmdb api and register the app and get access token
+- get data from tmpd Now playing movies list
+- Custom Hook for Now Playing Movies
+- Create movieSlice
+- Update Store with movies Data
+- Planning for MainContauiner & secondary container
+- Fetch Data for Trailer Video
+- Update Store with Trailer Video Data
+- Embedded the Yotube video and make it autoplay and mute
+- Tailwind Classes to make Main Container look awesome
+
+- 
 
 # Features
 - Login/Signup
