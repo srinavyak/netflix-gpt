@@ -62,8 +62,8 @@ const Login = () => {
   };
   return (
     <div>
-      <div className="absolute ">
         <Header />
+      <div className="absolute ">
         <img
           src={BG_URL}
           alt="bgimg"
