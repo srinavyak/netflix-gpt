@@ -9,8 +9,7 @@ import GPTSearch from './GPTSearch'
 import { useSelector } from 'react-redux'
 
 const Browse = () => {
- const showGptSearch = useSelector((store)=>store.gpt.showGptSearch);
- console.log(showGptSearch,"BGPt")
+ const showGptSearch = useSelector((store)=>store.gpt.showGptSearch);//gives true or false i.e whether we are in gpt page or not
   useNowPlayingMovies();
   usePopularMovies();
   useTopRated();
