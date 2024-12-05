@@ -17,7 +17,7 @@ const Login = () => {
   const handlebuttonclick = () => {
     const msg = validate(email.current.value, password.current.value);
     seterrorMessage(msg);
-    console.log(email.current.value, password.current.value)
+   // console.log(email.current.value, password.current.value)
     if(msg) return;
 
     if(!issignIn){
@@ -26,7 +26,7 @@ const Login = () => {
         .then((userCredential) => {
             // Signed up 
             const user = userCredential.user;
-            console.log(user)
+            //console.log(user)
             // ...
         })
         .catch((error) => {
@@ -43,7 +43,7 @@ const Login = () => {
             .then((userCredential) => {
                 // Signed in 
                 const user = userCredential.user;
-                console.log(user)
+               // console.log(user)
             })
             .catch((error) => {
                 const errorCode = error.code;

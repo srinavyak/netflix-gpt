@@ -44,14 +44,14 @@ const Header = () => {
 
   }
   const handlelangChange=(e)=>{
-    console.log(e.target.value)
+    //console.log(e.target.value)
     dispatch(changeLanguage(e.target.value))
 
   }
  
   return (
-    <div className=' flex absolute w-screen px-8 py-2 justify-between bg-gradient-to-b z-10 from-black'>
-        <img className='w-44 mx-auto md:mx-0' src={LOGO_URL} alt="logo"></img>
+    <div className=' absolute w-screen px-8 py-2 bg-gradient-to-b  from-black z-10 flex justify-between'>
+        <img className='w-44 ' src={LOGO_URL} alt="logo"></img>
         
        {user && ( <div className='flex p-2 justify-between'>
 

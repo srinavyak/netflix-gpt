@@ -4,7 +4,7 @@ import MovieList from './MovieList'
 
 const GPTMovieSuggestions = () => {
  const {movieNames,movieResults}=useSelector(store=>store.gptResult)
- console.log(movieResults,"ress")
+ //console.log(movieResults,"ress")
  if(!movieNames)return <h1>Movies not found..</h1>;
 
   return (

@@ -19,7 +19,7 @@ const GPTsearchBar = () => {
     }
 
     const handleGPTSearchClick=async()=>{
-        console.log(SearchText.current.value)
+       // console.log(SearchText.current.value)
 
         // make api call to gpt api and get movie results
         const gptQuery="Act as a Movie Recommendation system and suggest some movies for the query "
