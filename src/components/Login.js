@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import Header from "./Header";
 import { Link } from "react-router-dom";
-import validate from "../utils/validate";
+import {validate,validateSignup} from "../utils/validate";
 import { createUserWithEmailAndPassword,signInWithEmailAndPassword } from "firebase/auth";
 import { BG_URL } from "../constants/Bg_img";
 import {auth} from "../utils/firebase"
@@ -15,13 +15,17 @@ const Login = () => {
   const confirmpassword = useRef(null);
 
   const handlebuttonclick = () => {
-    const msg = validate(email.current.value, password.current.value);
-    seterrorMessage(msg);
-   // console.log(email.current.value, password.current.value)
-    if(msg) return;
+  //   const msg = validate(email.current.value, password.current.value);
+  //   seterrorMessage(msg);
+  //  // console.log(email.current.value, password.current.value)
+  //   if(msg) return;
 
     if(!issignIn){
 
+         const msg = validateSignup(email.current.value, password.current.value,confirmpassword.current.value);
+          seterrorMessage(msg);
+        // console.log(email.current.value, password.current.value)
+          if(msg) return;
         createUserWithEmailAndPassword(auth, email.current.value, password.current.value)
         .then((userCredential) => {
             // Signed up 
@@ -38,7 +42,10 @@ const Login = () => {
 
     }
     else{
-
+      const msg = validate(email.current.value, password.current.value);
+      seterrorMessage(msg);
+    // console.log(email.current.value, password.current.value)
+      if(msg) return;
         signInWithEmailAndPassword(auth, email.current.value, password.current.value)
             .then((userCredential) => {
                 // Signed in 
